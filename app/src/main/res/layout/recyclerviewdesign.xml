@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageView"
+            app:cardCornerRadius="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/imageView2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatarimaje">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="esraa"
+            android:textColor="#03A9F4"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/name"
+            android:text="10:40AM"
+            android:textColor="#2196F3"
+            android:textSize="12sp">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/time"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="1How Are you"
+            android:textColor="#03A9F4"
+            android:textSize="15sp">
+
+
+        </TextView>
+    </RelativeLayout>
+
+
+</RelativeLayout>
